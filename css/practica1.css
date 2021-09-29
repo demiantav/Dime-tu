@@ -92,47 +92,8 @@ nav{
 
 }
 
-.burguer{
-position: relative;
-margin-top: 3%;
-margin-right: 2%;
-display: none;
-justify-content: center;
-align-items: center;
-cursor: pointer;
-  width: 40px;
-  height: 40px;
-transition: all .5s ease-in-out;
 
-}
 
-.line{
-  width: 45%;
-  height: 8%;
-  background: white;
-  border-radius: 5px;
-  transition: all .5s ease-in-out;
-
-}
-
-.line::before,
-.line::after{
-  content: '';
-  position: absolute;
-  width: 60%;
-  height: 8%;
-  background: white;
-  border-radius: 5px;
-  transition: all .5s ease-in-out;
-}
-
-.line::before{
-  transform: translateY(-10px);
-}
-
-.line::after{
-  transform: translateY(10px);
-}
 /************/
 
 /**** Final de Header ****/
@@ -591,27 +552,18 @@ transform: scale(.80);
 
 /*Media queries para Diseño responsive*/
 
-@media screen and (max-width: 1300px) {
-
-  .logofont{
-    display: none;
-}
-
-
-
-
-
-}
-
 @media screen and (max-width: 800px){
 
-    #logo,h1{
+    #logo, h1{
       width: 2.5em;
       font-size: 0.9em;
     }
 
-    nav{display: none;}
-    .burguer{display: flex;}
+    nav, .logofont{
+      display: none;
+    }
+
+
 
 
 
