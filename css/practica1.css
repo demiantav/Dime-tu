@@ -102,16 +102,13 @@ nav{
 
 .caja-principal{
 
-display: flex;
+
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
 background-color: rgb(51, 31, 15);
 margin-top: 10%;
-padding: 4%;
-
-
-
-
-
-
+gap: 2em;
+padding: 2em;
 
 }
 
@@ -125,7 +122,6 @@ padding: 4%;
 }
 
 .img-new{
-height: 100%;
 width: 100%;
 cursor: pointer;
 transition: transform .39s ease-out;
@@ -139,9 +135,7 @@ transition: transform .39s ease-out;
 
 .caja-principal-columna{
 
-  margin-left: 4%;
   overflow: hidden;
-  background-color: red;
   position: relative;
   display: flex;
   justify-content: center;
@@ -500,7 +494,7 @@ margin: 2em auto 2em;
 
 .scale{
 
-  height: 78vh;
+  height: 60vh;
   transition: all .3s ease-in-out;
 
 
@@ -580,7 +574,7 @@ transform: scale(.80);
   .contenedorGif{
     grid-template-columns: 1fr;
 
-    grid-row: repeat(12 1fr);
+
   }
 
   .link-title{
