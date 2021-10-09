@@ -102,13 +102,13 @@ nav{
 
 .caja-principal{
 
-
+width: 100vw;
 display: grid;
 grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
 background-color: rgb(51, 31, 15);
 margin-top: 10%;
 gap: 2em;
-padding: 2em;
+padding: 1.2em;
 
 }
 
@@ -161,20 +161,26 @@ transition: transform .39s ease-out;
 
 .articulo{
 
-
   display: flex;
-  justify-content: space-around;
-  margin-top: 15%;
+  margin-top: 5%;
   font-family: 'Roboto', sans-serif;
 
+}
 
+.columns{
 
+display: flex;
+flex-direction: column;
+align-items: center;
+background: rgb(212, 141, 101);
+margin: 2em;
+width: 30%;
 
 }
 
 .title-section{
 
-  font-size: 2.4em;
+  font-size: clamp(1em, 8vw, 2.5em);
   font-weight: 600;
   letter-spacing: 0.4rem;
   text-decoration: none;
@@ -227,7 +233,7 @@ width: 70%;
   align-items: center;
   margin-bottom: 10%;
   margin-top: 10%;
-  border: 1px solid #cc8a0a;
+
 
 
 
@@ -247,25 +253,7 @@ width: 70%;
 }
 
 
-.columns{
-display: inline-flex;
-flex-direction: column;
-align-items: center;
-width: 30%;
-background: rgb(212, 141, 101);
-margin-top: 2%;
-margin-bottom: 2%;
 
-
-
-
-
-
-
-
-
-
-}
 
 /*****Video section*****/
 
@@ -464,7 +452,6 @@ margin: 2em auto 2em;
 
   display: grid;
   grid-template-columns: repeat(2,1.8fr);
-  grid-template-rows: repeat(2, 1fr);
   background-color: rgba(255, 84, 0, 0.92);
 
 
@@ -481,8 +468,6 @@ margin: 2em auto 2em;
   flex-direction: column;
   justify-content: space-between;
   margin: 9%;
-  color:black;
-  width: 40%;
   background: black;
 
 
@@ -566,15 +551,12 @@ transform: scale(.80);
 @media screen and (max-width: 500px){
 
   footer{flex-direction: column;}
-  .title-section{font-size: 1.7em;}
   .articulo{flex-direction: column;align-items: center;}
   .columns{width: 60%;}
   .subs{background-color: transparent;}
 
   .contenedorGif{
     grid-template-columns: 1fr;
-
-
   }
 
   .link-title{
