@@ -102,7 +102,7 @@ nav{
 
 .caja-principal{
 
-width: 100vw;
+
 display: grid;
 grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
 background-color: rgb(51, 31, 15);
@@ -180,7 +180,7 @@ width: 30%;
 
 .title-section{
 
-  font-size: clamp(1em, 8vw, 2.5em);
+
   font-weight: 600;
   letter-spacing: 0.4rem;
   text-decoration: none;
@@ -451,26 +451,20 @@ margin: 2em auto 2em;
 .contenedorGif{
 
   display: grid;
-  grid-template-columns: repeat(2,1.8fr);
+  grid-template-columns: repeat(2,1fr);
   background-color: rgba(255, 84, 0, 0.92);
-
-
-
-
-
-
-
+  padding: 2rem;
+  gap: 3em;
 
 }
 
 .gif{
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin: 9%;
   background: black;
-
-
+  padding: 2em;
 
 }
 
@@ -479,7 +473,7 @@ margin: 2em auto 2em;
 
 .scale{
 
-  height: 60vh;
+  width: 100%;
   transition: all .3s ease-in-out;
 
 
