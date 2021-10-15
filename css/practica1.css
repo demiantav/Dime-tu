@@ -78,7 +78,7 @@ nav{
   font-weight: bolder;
   display: flex;
   padding: 1em;
-  transition: padding .5s ease-in-out;
+  transition: color 0.9s;
 
 }
 
@@ -88,7 +88,7 @@ nav{
 
   border-top-color: red;
   color: #cc8a0a;
-  transition: color 0.9s;
+
 
 }
 
@@ -528,7 +528,7 @@ transform: scale(.80);
 @media screen and (max-width: 800px){
 
     #logo, h1{
-      width: 2.3em;
+      width: 2.5em;
       font-size: 0.9em;
     }
 
