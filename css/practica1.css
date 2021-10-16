@@ -2,8 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
-
 }
 
 body{
@@ -12,14 +10,8 @@ body{
    display: flex;
    flex-direction: column;
    color:white;
-   height: 100vh;
-
-
-
-
-
+   height: 100%;
 }
-
 
 
 /*Logo*/
@@ -52,15 +44,15 @@ body{
 /* Menu navegacion Header*/
 
 header {
-  border-bottom: 0.2em solid #cc8a0a;
-  width: 100%;
+
+    border-bottom: 0.2em solid #cc8a0a;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     background: hsl(0, 0%, 100%);
-    position: fixed;
+    position: sticky;
+    top: 0;
     z-index: 2;
-
-
 
 }
 
@@ -106,7 +98,6 @@ nav{
 display: grid;
 grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
 background-color: rgb(51, 31, 15);
-margin-top: 10%;
 gap: 2em;
 padding: 1.2em;
 
@@ -116,7 +107,7 @@ padding: 1.2em;
   position: absolute;
   color:white;
   background: black;
-  z-index: 9;
+  z-index: 1;
   /**opacity: 0;**/
 
 }
@@ -140,31 +131,16 @@ transition: transform .39s ease-out;
   display: flex;
   justify-content: center;
   align-items: center;
-
-
-
 }
-
-
-
-
-
 
 /*Articulo*/
 
-.circo{
-
-  width: 100%;
-
-
-}
 
 .articulo{
 
   display: flex;
   margin-top: 5%;
   font-family: 'Roboto', sans-serif;
-
 }
 
 .columns{
@@ -219,10 +195,6 @@ width: 30%;
 .images-items img{
 
 width: 70%;
-
-
-
-
 
 }
 
