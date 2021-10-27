@@ -12,7 +12,7 @@ body{
    color:white;
    height: 100%;
    font-family: 'Roboto', sans-serif;
-   
+
 }
 
 
@@ -236,9 +236,9 @@ transition: transform .39s ease-out;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  margin-top: 5%;
+  margin: 5% 2vw;
   font-family: 'Roboto', sans-serif;
-  /*background-color: rgb(244, 6, 200);*/
+  background-color: hsla(28, 83%, 88%, 0.87);
 }
 
 .columns{
@@ -246,7 +246,8 @@ transition: transform .39s ease-out;
 flex-grow: 1;
 background: rgb(212, 141, 101);
 margin: 2em;
-width: clamp(250px,10vw,30%);
+width: clamp(250px,20vw,1200px);
+border: 0.2rem solid hsla(14, 94%, 22%, 0.97);
 
 
 
@@ -332,6 +333,8 @@ width: 96%;
   margin-top: 10%;
   word-wrap: normal;
   border: .15em solid hsla(14, 94%, 22%, 0.97);
+  background-color: hsla(28, 83%, 88%, 0.87);
+  color: hsla(14, 94%, 22%, 0.97);
   padding: 5%;
 
 
@@ -632,8 +635,6 @@ margin: 2em auto 2em;
 @media screen and (max-width: 500px){
 
   footer{flex-direction: column;}
-  .articulo{flex-direction: column;align-items: center;}
-  .columns{width: 60%;}
   .subs{background-color: transparent;}
 
   .contenedorGif{
