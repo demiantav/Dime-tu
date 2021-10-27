@@ -12,6 +12,7 @@ body{
    color:white;
    height: 100%;
    font-family: 'Roboto', sans-serif;
+   
 }
 
 
@@ -233,18 +234,32 @@ transition: transform .39s ease-out;
 .articulo{
 
   display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
   margin-top: 5%;
   font-family: 'Roboto', sans-serif;
+  /*background-color: rgb(244, 6, 200);*/
 }
 
 .columns{
 
-display: flex;
-flex-direction: column;
-align-items: center;
+flex-grow: 1;
 background: rgb(212, 141, 101);
 margin: 2em;
-width: 30%;
+width: clamp(250px,10vw,30%);
+
+
+
+
+
+}
+
+.inside-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*background:blue;*/
+  margin: 0 1rem;
 
 }
 
@@ -259,6 +274,8 @@ width: 30%;
   margin-bottom: 5%;
   padding: 4%;
   position: relative;
+  font-size: clamp(1.5rem,2vw,30px);
+  /*background-color: red;*/
 
 
 
@@ -286,9 +303,11 @@ width: 30%;
 
 
 
-.images-items img{
+.circo{
 
-width: 70%;
+width: 96%;
+
+
 
 }
 
@@ -298,7 +317,7 @@ width: 70%;
   flex-direction: column;
   align-items: center;
   margin-bottom: 10%;
-  margin-top: 10%;
+  margin-top: 10%
 
 
 
@@ -517,7 +536,7 @@ margin: 2em auto 2em;
 .contenedorGif{
 
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, minmax(100px,1fr));
   background-color: rgba(255, 84, 0, 0.92);
   padding: 2rem;
   gap: 3em;
@@ -532,6 +551,7 @@ margin: 2em auto 2em;
   background: black;
   padding: 2em;
 
+
 }
 
 
@@ -542,9 +562,9 @@ margin: 2em auto 2em;
   width: 100%;
   transition: all .3s ease-in-out;
 
-
-
 }
+
+
 
 
 
