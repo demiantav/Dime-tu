@@ -239,6 +239,7 @@ margin-top: 3rem;
 
 .img-new{
 max-width: 100%;
+opacity: 0.6;
 object-fit: cover;
 cursor: pointer;
 transition: transform .39s ease-out;
@@ -264,13 +265,20 @@ transition: transform .39s ease-out;
 .textinside{
   position: absolute;
   color: rgb(255, 255, 255);
+  background: red;
   font-weight: 400;
+  height: clamp(150px,5vh, 60%);
   bottom:0;
-  margin: 1rem 2rem;
-  font-size: 1.6rem;
+  margin: .5rem 2rem;
+  font-size: 1.4rem;
   z-index: 1;
   /**opacity: 0;**/
 
+}
+
+.textinside p{
+
+  width: auto;
 }
 
 .textinside p:first-child{
