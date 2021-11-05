@@ -144,7 +144,7 @@ header {
 nav{
   display: flex;
   background-color: white;
-  height: 82.3vh;
+  height: 85.6%;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -152,8 +152,7 @@ nav{
   width: 100%;
   left: -100%;
   bottom: 0;
-
-  transition: all 1s;
+  transition: all .45s;
 
 
 
@@ -239,7 +238,7 @@ margin-top: 3rem;
 
 .img-new{
 max-width: 100%;
-opacity: 0.6;
+opacity: 0.82;
 object-fit: cover;
 cursor: pointer;
 transition: transform .39s ease-out;
@@ -265,20 +264,22 @@ transition: transform .39s ease-out;
 .textinside{
   position: absolute;
   color: rgb(255, 255, 255);
-  background: red;
   font-weight: 400;
-  height: clamp(150px,5vh, 60%);
   bottom:0;
   margin: .5rem 2rem;
   font-size: 1.4rem;
   z-index: 1;
+
   /**opacity: 0;**/
 
 }
 
 .textinside p{
 
-  width: auto;
+   font-size: min(6vw, 1.4rem);
+
+
+
 }
 
 .textinside p:first-child{
@@ -699,6 +700,7 @@ margin: 2em auto 2em;
 
     #logo{
       width: 2.7em;
+      margin-left: 30%;
 
     }
 
@@ -711,10 +713,7 @@ margin: 2em auto 2em;
 
     .logofont{display: none;}
 
-    nav{
 
-      height: 87.9vh;
-    }
 
 
 
@@ -743,6 +742,14 @@ margin: 2em auto 2em;
 
   }
 
+  @media screen and (max-width: 390px){
+
+    .iconos-copyright{
+
+      display: none;
+    }
+  }
+
 
 
 
@@ -754,7 +761,7 @@ margin: 2em auto 2em;
       width: auto;
       height: auto;
       position: static;
-      background-color: transparent;
+
     }
 
     .toggler, .burguer{
