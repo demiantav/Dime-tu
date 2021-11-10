@@ -81,12 +81,19 @@ transform: translateX(60px);
 .titdentro{
 
   position: absolute;
-  bottom: 1.5rem;
+  bottom: .2rem;
   margin: 0 3rem;
+  padding: 1em;
   color: white;
   line-height: 1.5;
   text-align: center;
+  background-color: rgba(255, 255, 255, 0.10);
 
+}
+
+.titdentro p, .titdentro h3{
+
+  text-shadow: black 1.4px 0 10px;
 }
 
 .titdentro h3{
@@ -98,9 +105,14 @@ transform: translateX(60px);
 }
 
 .titdentro h1{
-  font-size: clamp(18px, 8vw, 3rem);
+  font-size: clamp(16px, 6vw, 3rem);
   text-align: center;
   transition: color 0.3s ease;
+}
+
+.secc_principal img{
+
+  filter: brightness(-3);
 }
 
 .secc_principal a:hover > .titdentro > h1{
@@ -111,6 +123,7 @@ transform: translateX(60px);
 .secc_principal img:hover{
 
   transform: scale(1.1);
+
 
 }
 
@@ -150,7 +163,7 @@ nav{
   width: 100%;
   height: 100%;
   left: -100%;
-  top: 0;
+  top: 4.6em;
   transition: all .45s;
 
 
@@ -247,7 +260,7 @@ transition: transform .39s ease-out;
 }
 .img-new:hover{
   transform: scale(1.2);
-  filter: blur(0.1rem);
+
 
 }
 
@@ -715,7 +728,7 @@ margin: 2em auto 2em;
     .logofont{display: none;}
 
     nav{
-       top: 4.6em;
+
 
     }
 
