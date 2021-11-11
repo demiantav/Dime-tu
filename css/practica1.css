@@ -91,9 +91,9 @@ transform: translateX(60px);
 
 }
 
-.titdentro p, .titdentro h3{
+.titdentro p, .titdentro h1{
 
-  text-shadow: black 1.4px 0 10px;
+  text-shadow: black 1.2px 0 10px;
 }
 
 .titdentro h3{
@@ -208,7 +208,7 @@ nav{
   text-decoration: none;
   color: hsla(14, 94%, 22%, 0.97);
   font-family: 'Roboto', sans-serif;
-  font-size: 14px;
+  font-size: 25px;
   font-weight: bolder;
   display: flex;
   padding: 1em;
@@ -296,7 +296,7 @@ transition: transform .39s ease-out;
 
 }
 
-.textinside p:first-child{
+.textinside p:first-child, .titdentro h3{
 
   background-color: black;
   color:rgba(255, 84, 0, 0.92);
@@ -350,15 +350,13 @@ border: 0.2rem solid hsla(14, 94%, 22%, 0.97);
 .inside-container{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  /*background:blue;*/
   margin: 0 1rem;
 
 }
 
 .title-section{
 
-
+  text-align: center;
   font-weight: 600;
   letter-spacing: 0.4rem;
   text-decoration: none;
@@ -658,6 +656,8 @@ margin: 2em auto 2em;
 .scale{
 
   width: 100%;
+  height: 258px;
+  object-fit: cover;
   transition: all .3s ease-in-out;
 
 }
@@ -726,20 +726,6 @@ margin: 2em auto 2em;
     }
 
     .logofont{display: none;}
-
-    nav{
-
-
-    }
-
-
-
-
-
-
-
-
-
 }
 
 @media screen and (max-width: 500px){
@@ -787,6 +773,11 @@ margin: 2em auto 2em;
     .toggler, .burguer{
 
       display: none;
+    }
+
+    .titulosnav{
+
+      font-size: 16px;
     }
 
   }
