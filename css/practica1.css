@@ -507,12 +507,7 @@ footer{
      display: flex;
      flex-direction: row;
      flex-wrap: wrap;
-
-
-
-
-
-   }
+}
 
    .pep{
      display: flex;
@@ -553,9 +548,9 @@ text-decoration: none;
 
 .subs{
 
-  padding: 1em;
+
   font-family: 'Roboto', sans-serif;
-  margin: 2%;
+  margin-top: 3.8%;
   border-radius: 5%;
   color: white;
   flex-grow: 1;
@@ -789,11 +784,16 @@ margin: 2em auto 2em;
     nav{
 
       flex-direction: row;
+      align-items: center;
       width: auto;
       height: auto;
       position: static;
       transform: translateX(-40px);
 
+    }
+    .logo-inside-nav{
+
+      display: none;
     }
 
     .nav-icons{
