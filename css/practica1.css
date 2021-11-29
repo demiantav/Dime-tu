@@ -603,6 +603,11 @@ body{
 
        }
 
+       .contenedorGif{
+
+         grid-template-columns: 1fr;
+       }
+
      }
 
       @media screen and (max-width: 390px){
